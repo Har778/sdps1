@@ -137,12 +137,24 @@ nav li a.flash:focus{
 .side-bar a img{
 	display: none;
 }
+/*second menu style*/
 
-.active{
-	display: block;
-	color: #123e6b;
-	transform: translate(-300px, 120px);
+.second-menu{
+	display: none;
 }
+
+div.second-menu nav li a{
+	font-size: 14px;
+	color: #123e6b;
+}
+
+div.second-menu li{
+	padding: 5px 0;
+}
+
+.active{display: table-caption;}
+
+div.second-menu li{margin: 5px 15px;}
 
 @media (max-width: 1140px){
 	header{
@@ -163,20 +175,18 @@ nav li a.flash:focus{
 }
 
 @media (min-width: 768px) and (max-width: 934px){
+	.top-head{padding: 0 100px 0;}
+	.top-head-nav li {margin: 0 5px;}
 	header{
 		padding: 5px 5px;
-		flex-direction: column;
+		flex-direction: row;
 	}
-	header img{width: 700px;}
-	header nav{
-		margin: 0;
-		background: #e0e0e4;
-		transform: scale(1.6);
-	}	
+	header img{width: 400px;}
+	header nav li {margin: 0 10px;}
 	header nav li a#aList{
-		color: #123e6b;
-		font-size: 8px;
-		font-weight: 700;
+		color: #fff;
+		font-size: 11px;
+		font-weight: 500;
 	}
 	div.dropdown-content{
 		min-width: 80px;
@@ -188,7 +198,7 @@ nav li a.flash:focus{
 	}
 }
 
-@media (min-width: 320px) and (max-width: 576px){
+@media (min-width: 320px) and (max-width: 768px){
 	div.top-head{
 		padding: 0;
 		width: 100%;
@@ -201,12 +211,12 @@ nav li a.flash:focus{
 	.top-head nav{display: flex;}
 	.top-head nav li{margin: 0 5px;}
 	.top-head nav li a i{font-size: 12px;}
+	header{padding: 0 10px;}
 	header img{
 		width: 280px;
 		height: 70px;
 	}
 	header nav{display: none;}
-	header nav li a#aList{color: #123e6b;}
 	.side-bar a img{
 		display: block;
 		float: right;
